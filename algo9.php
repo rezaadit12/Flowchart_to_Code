@@ -19,13 +19,14 @@
 if (isset($_POST['submit'])) {
 
     $suhuF = $_POST['suhu'];
-    $suhuC = $suhuF / 33.8;
+    $suhuC = ($suhuF - 32) * 5/9;
 
+    var_dump($suhuC);
     if($suhuC >= 300){
         echo "panas";
     }else if($suhuC >= 250){
-        echo "dingin";
-    }else{
         echo "normal";
+    }else{
+        echo "dingin";
     }
 }
