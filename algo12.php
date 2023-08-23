@@ -68,11 +68,11 @@
     <div class="container">
         <h2>Hitung Waktu</h2>
         <form action="" method="post">
-            <input type="number" name="hh" placeholder="Jam">
+            <input type="number" name="hh" placeholder="Jam" maxlength="2" onKeyPress="if( this.value.length == 2 ) return false;">
             <br>
-            <input type="number" name="mm" placeholder="Menit">
+            <input type="number" name="mm" placeholder="Menit" maxlength="2" onKeyPress="if( this.value.length == 2 ) return false;">
             <br>
-            <input type="number" name="ss" placeholder="Detik">
+            <input type="number" name="ss" placeholder="Detik" maxlength="2" onKeyPress="if( this.value.length == 2 ) return false;">
             <br>
             <button type="submit" name="submit">Hitung</button>
         </form>

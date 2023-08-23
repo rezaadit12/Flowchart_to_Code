@@ -26,15 +26,15 @@ if(isset($_POST['submit'])){
     $rata = ($pabp + $mtk + $dpk) /3;
 
     if($rata <= 100 && $rata >= 80){
-        echo "A";
+        echo "Grade nilai : A";
     }else if($rata <= 80 && $rata >= 75){
-        echo "B";
+        echo "Grade nilai : B";
     }else if($rata <= 75 && $rata >= 65){
-        echo "C";
+        echo "Grade nilai : C";
     }else if($rata <= 65 && $rata >=45){
-        echo "D";
+        echo "Grade nilai : D";
     }else if($rata <= 45 && $rata >= 0){
-        echo "E";
+        echo "Grade nilai : E";
     }else{
         echo "angka tidak memenuhi persyaratan";
     }

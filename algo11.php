@@ -68,14 +68,14 @@
     <div class="container">
         <h2>Informasi Pegawai</h2>
         <form action="" method="post">
-            <input type="number" name="noPegawai" placeholder="No. Pegawai (11 digit)">
+            <input type="number" name="noPegawai" placeholder="No. Pegawai (11 digit)" maxlength="11" onKeyPress="if( this.value.length == 11 ) return false;">
             <br>
             <button type="submit" name="submit">Submit</button>
         </form>
         <div class="result">
             <?php
                 if(isset($_POST['submit'])){
-                    // ... (Kode PHP Anda)
+
                     $noPegawai = $_POST['noPegawai'];
 
                     if(strlen($noPegawai) > 11){
